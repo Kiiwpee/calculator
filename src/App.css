@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.CalcContainer{
+  width: 600px;
+  border: 5px solid black;
+  margin: auto;
+}
+
+.DispContainer{
+  border: 5px solid blue;
+  height: 40px;
+  background-color: gray;
+}
+
+.Display{
+  font-size: 2em;
+  text-align: right;
+
+}
+
+.ButtonContainer{
+  border: 3px solid green;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.ButtonContainer > button{
+  flex: 0 1 25%;
+  font-size: 2em;
+  background-color: yellow;
+}
