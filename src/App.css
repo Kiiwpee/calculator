@@ -9,47 +9,84 @@
 }
 
 .CalcContainer {
-  width: 400px;
-  height: 500px;
-  border: 5px solid black;
+  width: 420px;
+  height: 520px;
+  border: 5px solid rgb(36, 54, 66);
   margin : auto;
   margin-top: 250px;
+  background-color: rgb(36, 54, 66);
+  border-radius: 10px;
 }
 
 .DispContainer {
-  border: 5px solid black;
-  height: 100px;
-  background-color: gray;
+  border: 1px solid rgb(98, 149, 132);
+  height: 90px;
   padding: 1px;
-  background-color: wheat;
-  color: orange;
-  padding: 3px;
+  background-color: rgb(106, 154, 176);
+  border-radius: 10px;
+  margin: 5px;
 }
 
 .ButtonsContainer {
-  background-color: black;
+  background-color: rgb(56, 75, 112);
   border: 5px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 20%);
   height: 390px;
   padding-left: 12px;
-  padding-top: 30px;
+  padding-top: 20px;
+  margin: 5px;
+  margin-top: 10px;
+  border-radius: 10px;
 }
 
 .ButtonsContainer button {
-  background-color: white;
-  color: black;
-  font-size: 2em;
+  background-color: rgb(36, 54, 66);
+  color: rgb(196, 218, 210);
+  font-size: 3vh;
   border-radius: 10px; 
   height: 4rem;
   width: 5rem;
 }
 
+.ButtonsContainer :nth-child(4) {
+  background-color: rgb(106, 154, 176);
+}
+.ButtonsContainer :nth-child(8) {
+  background-color: rgb(106, 154, 176);
+}
+.ButtonsContainer :nth-child(12) {
+  background-color: rgb(106, 154, 176);
+}
+.ButtonsContainer :nth-child(13) {
+  background-color: rgb(234, 216, 177);
+  color: rgb(58, 109, 140)
+}
+.ButtonsContainer :nth-child(15) {
+  background-color: rgb(106, 154, 176);
+}
+.ButtonsContainer :nth-child(16) {
+  background-color: rgb(106, 154, 176);
+}
+
+
+.ButtonsContainer :nth-child(17) {
+  background-color: rgb(58, 109, 140);
+  display: flex;
+  justify-content: center;
+  width: 383%;
+  font-size: 2em;
+  border-radius: 10px; 
+  padding-top: 10px ;
+ 
+}
+
 
 .Display {
-  font-size: 3em;
-  color: black;
+  font-size: 4vh;
+  color: rgb(196, 218, 210);
   text-align: right;
-  padding-top: 5px;
-  padding: 5px;
+  margin-top: 10px;
+  padding-right: 10px;
 }

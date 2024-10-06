@@ -23,11 +23,18 @@ function App() {
   const [num2, setNum2] = useState(null);
   const [op, setOp] = useState(null);
 
+  const mySurname = (e) => {
+    e.preventDefault();
+      setDisp("Sean Austine Simon");
+        setNum1(null);
+        setNum2(null);
+        setOp(null);
+  }
+
   const genericClickHandler = (e) => {
     e.preventDefault();
     const value = e.target.innerHTML;
     
-    // Handle the "C" button
     if (value.toLowerCase() === 'c') {
       setDisp(0);
       setNum1(null);
@@ -35,8 +42,6 @@ function App() {
       setOp(null);
       return;
     }
-
-    setDisp('Coming Soon');
   };
 
   const numClickHandler = (e) => {
@@ -106,22 +111,23 @@ function App() {
           <Display display={disp} />
         </div>
         <div className="ButtonsContainer">
-          <Key label={7} clickHandler={numClickHandler} className="button-7"/>
-          <Key label={8} clickHandler={numClickHandler} className="button-8"/>
-          <Key label={9} clickHandler={numClickHandler} className="button-9"/>
-          <Key label={"÷"} clickHandler={opClickHandler} className="button-divide"/>
-          <Key label={4} clickHandler={numClickHandler} className="button-4"/>
-          <Key label={5} clickHandler={numClickHandler} className="button-5"/>
-          <Key label={6} clickHandler={numClickHandler} className="button-6"/>
-          <Key label={"*"} clickHandler={opClickHandler} className="button-multiply"/>
-          <Key label={3} clickHandler={numClickHandler} className="button-3"/>
-          <Key label={2} clickHandler={numClickHandler} className="button-2"/>
-          <Key label={1} clickHandler={numClickHandler} className="button-1"/>
-          <Key label={"-"} clickHandler={opClickHandler} className="button-subtract"/>
-          <Key label={"C"} clickHandler={genericClickHandler} className="buttonClear"/>
-          <Key label={0} clickHandler={numClickHandler} className="button-0"/>
-          <Key label={"="} clickHandler={eqClickHandler} className="button-equals"/>
-          <Key label={"+"} clickHandler={opClickHandler} className="button-=plus"/>
+          <Key label={7} clickHandler={numClickHandler} />
+          <Key label={8} clickHandler={numClickHandler} />
+          <Key label={9} clickHandler={numClickHandler} />
+          <Key label={"÷"} clickHandler={opClickHandler} />
+          <Key label={4} clickHandler={numClickHandler} />
+          <Key label={5} clickHandler={numClickHandler} />
+          <Key label={6} clickHandler={numClickHandler} />
+          <Key label={"*"} clickHandler={opClickHandler} />
+          <Key label={3} clickHandler={numClickHandler} />
+          <Key label={2} clickHandler={numClickHandler} />
+          <Key label={1} clickHandler={numClickHandler} />
+          <Key label={"-"} clickHandler={opClickHandler} />
+          <Key label={"C"} clickHandler={genericClickHandler} />
+          <Key label={0} clickHandler={numClickHandler} />
+          <Key label={"="} clickHandler={eqClickHandler} />
+          <Key label={"+"} clickHandler={opClickHandler} />
+          <Key label={"Simon"} clickHandler={mySurname} />
         </div>
       </div>
     </div>
