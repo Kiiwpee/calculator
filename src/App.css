@@ -1,21 +1,39 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  text-align: center
 }
 
-* {
+* { 
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+
 .CalcContainer {
   width: 420px;
-  height: 520px;
+  height: 580px;
   border: 5px solid rgb(36, 54, 66);
   margin : auto;
-  margin-top: 250px;
   background-color: rgb(36, 54, 66);
   border-radius: 10px;
+}
+
+.NameContainer {
+  border: 3px solid rgb(98, 149, 132);
+  border-radius: 10px;
+  color: rgb(196, 218, 210);
+}
+
+.NameContainer h1 {
+  font-size: 25px;
+}
+.NameContainer h2 {
+  font-size: 23px;
 }
 
 .DispContainer {
@@ -25,6 +43,14 @@
   background-color: rgb(106, 154, 176);
   border-radius: 10px;
   margin: 5px;
+}
+
+.Display {
+  font-size: 4vh;
+  color: rgb(196, 218, 210);
+  text-align: right;
+  margin-top: 13px;
+  padding-right: 10px;
 }
 
 .ButtonsContainer {
@@ -83,10 +109,3 @@
 }
 
 
-.Display {
-  font-size: 4vh;
-  color: rgb(196, 218, 210);
-  text-align: right;
-  margin-top: 10px;
-  padding-right: 10px;
-}

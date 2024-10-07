@@ -107,28 +107,32 @@ function App() {
   return (
     <div className="App">
       <div className="CalcContainer">
-        <div className="DispContainer">
-          <Display display={disp} />
+        <div className="NameContainer">
+          <h1>Calculator of Sean Austine Simon</h1>
+          <h2>BSIT - 3A</h2>
         </div>
-        <div className="ButtonsContainer">
-          <Key label={7} clickHandler={numClickHandler} />
-          <Key label={8} clickHandler={numClickHandler} />
-          <Key label={9} clickHandler={numClickHandler} />
-          <Key label={"÷"} clickHandler={opClickHandler} />
-          <Key label={4} clickHandler={numClickHandler} />
-          <Key label={5} clickHandler={numClickHandler} />
-          <Key label={6} clickHandler={numClickHandler} />
-          <Key label={"*"} clickHandler={opClickHandler} />
-          <Key label={3} clickHandler={numClickHandler} />
-          <Key label={2} clickHandler={numClickHandler} />
-          <Key label={1} clickHandler={numClickHandler} />
-          <Key label={"-"} clickHandler={opClickHandler} />
-          <Key label={"C"} clickHandler={genericClickHandler} />
-          <Key label={0} clickHandler={numClickHandler} />
-          <Key label={"="} clickHandler={eqClickHandler} />
-          <Key label={"+"} clickHandler={opClickHandler} />
-          <Key label={"Simon"} clickHandler={mySurname} />
-        </div>
+          <div className="DispContainer">
+            <Display display={disp} />
+          </div>
+          <div className="ButtonsContainer">
+            <Key label={7} clickHandler={numClickHandler} />
+            <Key label={8} clickHandler={numClickHandler} />
+            <Key label={9} clickHandler={numClickHandler} />
+            <Key label={"÷"} clickHandler={opClickHandler} />
+            <Key label={4} clickHandler={numClickHandler} />
+            <Key label={5} clickHandler={numClickHandler} />
+            <Key label={6} clickHandler={numClickHandler} />
+            <Key label={"*"} clickHandler={opClickHandler} />
+            <Key label={3} clickHandler={numClickHandler} />
+            <Key label={2} clickHandler={numClickHandler} />
+            <Key label={1} clickHandler={numClickHandler} />
+            <Key label={"-"} clickHandler={opClickHandler} />
+            <Key label={"C"} clickHandler={genericClickHandler} />
+            <Key label={0} clickHandler={numClickHandler} />
+            <Key label={"="} clickHandler={eqClickHandler} />
+            <Key label={"+"} clickHandler={opClickHandler} />
+            <Key label={"Simon"} clickHandler={mySurname} />
+          </div>
       </div>
     </div>
   );
